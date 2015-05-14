@@ -83,7 +83,8 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-  <<: *default
-  database: groupron_production
-  username: groupron
-  password: <%= ENV['GROUPRON_DATABASE_PASSWORD'] %>
+ <<: *default
+ # <<: *default
+ # database: groupron_production
+ # username: groupron
+ # password: <%= ENV['GROUPRON_DATABASE_PASSWORD'] %>
