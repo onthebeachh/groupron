@@ -235,7 +235,7 @@ function onYouTubePlayerAPIReady() {
 
 				if(!ytp.YTAPIReady){
 					var tag = document.createElement('script');
-					tag.src = "http://www.youtube.com/player_api";
+					tag.src = "https://www.youtube.com/player_api";
 					tag.id = "YTAPI";
 					var firstScriptTag = document.getElementsByTagName('script')[0];
 					firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
