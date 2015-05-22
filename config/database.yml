@@ -26,7 +26,12 @@ default: &default
   pool: 5
 
 development:
-  <<: *default
+  adapter: postgresql
+  host: localhost
+  username: postgres
+  database: grouporn
+  password: secreto
+  port: 5432
   #database: groupron_development
 
   # The specified database role being used to connect to postgres.
@@ -83,7 +88,12 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
- <<: *default
+  adapter: postgresql
+  encoding: unicode
+  host: ec2-50-19-233-111.compute-1.amazonaws.com
+  database: d55uq6mef0hiel
+  user: mjdqerhwdzrmsb
+  password: TC_0HsVHaUg_BT2KEWNk06el-n
  # <<: *default
  # database: groupron_production
  # username: groupron
